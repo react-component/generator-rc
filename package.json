@@ -1,0 +1,21 @@
+{
+  "name": "generator-rc",
+  "version": "1.0.0",
+  "author":"yiminghe@gmail.com",
+  "description": "yeoman generator for react component",
+  "keywords": [
+    "yeoman-generator",
+    "react"
+  ],
+  "dependencies": {
+    "yeoman-generator": "^0.17.3"
+  },
+  "engines": {
+    "node": ">=0.11"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/react-component/generator-rc.git"
+  }
+}
