@@ -1,15 +1,13 @@
 <!doctype html>
 <html>
 <head>
-    <title><%= appname %>@<%= version %> demo</title>
+    <title>rc-<%= appname %>@<%= version %> demo</title>
 </head>
 <body>
-<h1 style="text-align: center"><%= appname %>@<%= version %> demo</h1>
+<h1 style="text-align: center">rc-<%= appname %>@<%= version %> demo</h1>
 <script src="/node_modules/modulex/build/modulex-debug.js?nowrap"></script>
 <script>
-    require('../',function(<%= appname %>){
-        //  TODO with <%= appname %>
-    });
+    require('./index');
 </script>
 </body>
 </html>
