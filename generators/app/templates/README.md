@@ -46,7 +46,7 @@ http://localhost:<%= port%>/tests/runner.html?coverage
 
 ## Coverage
 
-http://localhost:<%= port%>/node_modules/node-jscover/lib/front-end/jscoverage.html?w=http://localhost:<%= port%>/tests/runner.html?coverage
+http://localhost:<%= port%>/node_modules/rc-server/node_modules/node-jscover/lib/front-end/jscoverage.html?w=http://localhost:<%= port%>/tests/runner.html?coverage
 
 ## License
 
