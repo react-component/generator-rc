@@ -1,5 +1,6 @@
 /** @jsx React.DOM */
 
+var <%= appname%> = require('../');
+var React = require('react');
 
-require(['../','/node_modules/react/react'],function(<%= appname%>, React){
-});
+// TODO with <%= appname%>
