@@ -2,7 +2,17 @@
 
 yeoman generator for react component
 
-## usage
+## Feature
+
+* support precommit-hook
+* support jshint/jscs
+* support gh-changelog
+* support mocha-phantomjs
+* support coveralls.io
+* support travis-ci
+* support saucelabs
+
+## Usage
 
 ```
 npm install yo generator-rc -g

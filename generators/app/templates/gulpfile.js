@@ -33,3 +33,19 @@ gulp.task('gh-changelog', function (done) {
     done();
   });
 });
+
+gulp.task('saucelabs', function (done) {
+  require('saucelabs-runner')({
+    browsers: [
+      {browserName: 'chrome'},
+      {browserName: 'firefox'},
+      {browserName: 'internet explorer', version: 8},
+      {browserName: 'internet explorer', version: 9},
+      {browserName: 'internet explorer', version: 10},
+      {browserName: 'internet explorer', version: 11, platform: 'Windows 8.1'}
+    ]
+  }).fin(function () {
+    done();
+    process.exit(0);
+  });
+});
