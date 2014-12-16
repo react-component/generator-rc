@@ -46,6 +46,8 @@ gulp.task('saucelabs', function (done) {
     ]
   }).fin(function () {
     done();
-    process.exit(0);
+    setTimeout(function () {
+      process.exit(0);
+    }, 1000);
   });
 });

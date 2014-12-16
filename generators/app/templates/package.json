@@ -17,14 +17,8 @@
   },
   "licenses": "MIT",
   "spm": {},
-  "config": {
-    "port":
-    <
-    %
-    =
-    port
-    %
-    >
+  "config":{
+    "port":<%= port%>
   },
   "scripts": {
     "start": "node --harmony node_modules/.bin/rc-server",
@@ -36,7 +30,7 @@
     "browser-test-cover": "mocha-phantomjs -R node_modules/rc-server/node_modules/node-jscover/lib/reporters/mocha/console http://localhost:$npm_package_config_port/tests/runner.html?coverage"
   },
   "devDependencies": {
-    "rc-server": "^1.0.0",
+    "rc-server":"^1.0.0",
     "expect.js": "~0.3.1",
     "gh-changelog": "^1.0.5",
     "gulp": "^3.8.7",
@@ -52,7 +46,7 @@
     "precommit-hook": "^1.0.7",
     "react": "~0.12.1",
     "simulate-dom-event": "^1.0.1",
-    "sinon": "^1.12.2"
+    "sinon":"^1.12.2"
   },
   "precommit": [
     "lint"
