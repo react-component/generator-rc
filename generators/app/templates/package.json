@@ -37,16 +37,14 @@
     "gulp-jscs": "^1.1.0",
     "gulp-jshint": "^1.8.4",
     "gulp-jsx": "~0.6.0",
-    "saucelabs-runner": "~2.0.0",
+    "saucelabs-runner": "^2.0.0",
     "gulp-util": "^3.0.1",
     "jquery": "~1.11.1",
     "jshint": "^2.5.5",
     "jshint-stylish": "^0.4.0",
-    "modulex": "~1.7.3",
+    "modulex": "^1.7.3",
     "precommit-hook": "^1.0.7",
-    "react": "~0.12.1",
-    "simulate-dom-event": "^1.0.1",
-    "sinon":"^1.12.2"
+    "react": "~0.12.1"
   },
   "precommit": [
     "lint"

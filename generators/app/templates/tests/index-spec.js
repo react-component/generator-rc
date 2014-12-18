@@ -1,11 +1,10 @@
 /** @jsx React.DOM */
 
 var expect = require('expect.js');
-var Pager = require('../index');
-var React = require('react');
-var sinon = require('sinon');
+var React = require('react/addons');
 var $ = require('jquery');
-var simulateDomEvent = require('simulate-dom-event');
+var TestUtils = React.addons.TestUtils;
+var Simulate = TestUtils.Simulate;
 
 describe('<%= appname%>', function (){
     
