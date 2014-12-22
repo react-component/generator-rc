@@ -20,9 +20,12 @@ module.exports = Base.extend({
   setup: function () {
     var self = this;
     this.src.recurse('.', function (path, root, subdir, filename) {
+      console.log(arguments);
       self.template(path, subdir ? Path.resolve(subdir, filename) : filename);
     });
-    this.dest.write('lib/' + this.appname + '.js', ['/**', '*' + this.appname, '*/'].join('\n'));
+    var appname = this.appname;
+    var filename = appname.charAt(0).toUpperCase()+appname.slice(1);
+    this.dest.write('lib/' + filename + '.js', ['/**', '*' + filename, '*/'].join('\n'));
   },
 
   done: function () {

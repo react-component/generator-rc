@@ -21,7 +21,6 @@ Thumbs.db
 .build
 node_modules
 _site
-sea-modules
 spm_modules
 .cache
 dist
