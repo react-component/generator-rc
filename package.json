@@ -1,6 +1,6 @@
 {
   "name": "generator-rc",
-  "version": "1.3.5",
+  "version": "1.4.0",
   "author":"yiminghe@gmail.com",
   "description": "yeoman generator for react component",
   "keywords": [
