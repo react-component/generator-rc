@@ -15,7 +15,7 @@ module.exports = Base.extend({
     this.Appname = this.appname.charAt(0).toUpperCase() + this.appname.slice(1);
     this.log('welcome to generator-rc: ' + this.appname);
     this.port = this.options.port;
-    this.version = this.options.version;
+    this.version = this.options.rc_version;
     this.author = this.options.author;
   },
 
