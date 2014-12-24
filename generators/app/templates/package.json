@@ -22,6 +22,7 @@
   },
   "scripts": {
     "less": "rc-tools run less",
+    "history": "rc-tools run history",
     "start": "node --harmony node_modules/.bin/rc-server",
     "publish": "spm publish && rc-tools run tag",
     "lint": "rc-tools run lint",
