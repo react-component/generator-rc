@@ -2,6 +2,8 @@
 
 yeoman generator for react component
 
+For details to see https://github.com/react-component/rc-server and https://github.com/react-component/rc-tools
+
 ## Feature
 
 * support precommit-hook
