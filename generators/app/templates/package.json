@@ -4,7 +4,9 @@
   "description": "<%= appname%> ui component for react",
   "keywords": [
     "react",
-    "react-<%= appname%>"
+    "react-component",
+    "react-<%= appname%>",
+    "<%= appname%>"
   ],
   "homepage": "http://github.com/react-component/<%= appname%>",
   "author": "<%= author%>",
