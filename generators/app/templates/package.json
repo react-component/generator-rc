@@ -24,7 +24,7 @@
     "less": "rc-tools run less",
     "history": "rc-tools run history",
     "start": "node --harmony node_modules/.bin/rc-server",
-    "publish": "spm publish && rc-tools run tag",
+    "publish": "rc-tools run tag && spm publish && spm doc publish",
     "lint": "rc-tools run lint",
     "test": "",
     "saucelabs": "DEBUG=saucelabs-runner rc-tools run saucelabs",
