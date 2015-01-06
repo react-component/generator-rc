@@ -29,14 +29,14 @@
     "publish": "rc-tools run tag && spm publish && spm doc publish",
     "lint": "rc-tools run lint",
     "test": "",
-    "saucelabs": "DEBUG=saucelabs-runner rc-tools run saucelabs",
-    "browser-test": "mocha-phantomjs http://localhost:$npm_package_config_port/tests/runner.html",
-    "browser-test-cover": "mocha-phantomjs -R node_modules/rc-server/node_modules/node-jscover/lib/reporters/mocha/console http://localhost:$npm_package_config_port/tests/runner.html?coverage"
+    "saucelabs": "rc-tools run saucelabs",
+    "browser-test": "rc-tools run browser-test",
+    "browser-test-cover": "rc-tools run browser-test-cover"
   },
   "devDependencies": {
     "precommit-hook": "^1.0.7",
-    "rc-server": "^1.4.3",
-    "rc-tools": "^1.0.1",
+    "rc-server": "^1.5.4",
+    "rc-tools": "^1.1.3",
     "expect.js": "~0.3.1",
     "modulex": "^1.7.4",
     "react": "~0.12.1"
