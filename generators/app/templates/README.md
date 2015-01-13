@@ -8,6 +8,9 @@ react <%= appname%> component
 [![gemnasium deps][gemnasium-image]][gemnasium-url]
 [![node version][node-image]][node-url]
 [![npm download][download-image]][download-url]
+[![Sauce Test Status](https://saucelabs.com/buildstatus/rc-<%= appname%>)](https://saucelabs.com/u/rc-<%= appname%>)
+
+[![Sauce Test Status](https://saucelabs.com/browser-matrix/rc-<%= appname%>.svg)](https://saucelabs.com/u/rc-<%= appname%>)
 
 [npm-image]: http://img.shields.io/npm/v/rc-<%= appname%>.svg?style=flat-square
 [npm-url]: http://npmjs.org/package/rc-<%= appname%>
