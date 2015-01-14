@@ -1,8 +1,10 @@
 # rc-<%= appname%>
+---
 
-react <%= appname%> component
+<%= appname%> ui component for react
 
 [![NPM version][npm-image]][npm-url]
+[![SPM version](http://spmjs.io/badge/rc-<%= appname%>)](http://spmjs.io/package/rc-<%= appname%>)
 [![build status][travis-image]][travis-url]
 [![Test coverage][coveralls-image]][coveralls-url]
 [![gemnasium deps][gemnasium-image]][gemnasium-url]
@@ -25,6 +27,25 @@ react <%= appname%> component
 [download-image]: https://img.shields.io/npm/dm/rc-<%= appname%>.svg?style=flat-square
 [download-url]: https://npmjs.org/package/rc-<%= appname%>
 
+## Screenshots
+
+<img src="http://gtms02.alicdn.com/tps/i2/TB1luFKHXXXXXb3XXXXl4OqLpXX-574-596.png" width="288"/>
+
+
+## Feature
+
+* support ie8,ie8+,chrome,firefox,safari
+
+### Keyboard
+
+* Previous month (PageUp)
+* Next month (PageDown)
+* tab into hour input: Last hour(Up), Next hour(Down)
+* tab into hour input: Last minute(Up), Next minute(Down)
+* tab into hour input: Last second(Up), Next second(Down)
+* Last year (Control + left)
+* Next year (Control + right)
+
 ## install
 
 [![rc-<%= appname%>](https://nodei.co/npm/rc-<%= appname%>.png)](https://npmjs.org/package/rc-<%= appname%>)
@@ -32,9 +53,35 @@ react <%= appname%> component
 ## Usage
 
 ```js
-var <%= appname%> = require('rc-<%= appname%>');
-// use <%= appname%>
-```
+var Rc<%= appname%> = require('rc-<%= appname%>');
+var React = require('react');
+React.render(<Rc<%= appname%> />, container);
+
+## API
+
+### props
+
+<table class="table table-bordered table-striped">
+    <thead>
+    <tr>
+        <th style="width: 100px;">name</th>
+        <th style="width: 50px;">type</th>
+        <th style="width: 50px;">default</th>
+        <th>description</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>className</td>
+          <td>String</td>
+          <td></td>
+          <td>additional css class of root dom node</td>
+        </tr>
+    </tbody>
+</table>
+
+
+online docs: http://spmjs.io/docs/rc-<%= appname%>/
 
 ## Development
 
@@ -42,6 +89,12 @@ var <%= appname%> = require('rc-<%= appname%>');
 npm install
 npm start
 ```
+
+## Example
+
+http://localhost:<%= port%>/examples/index.md
+
+online example: http://spmjs.io/docs/rc-<%= appname%>/examples/
 
 ## Test Case
 
