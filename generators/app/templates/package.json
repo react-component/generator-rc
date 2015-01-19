@@ -18,9 +18,11 @@
     "url": "http://github.com/react-component/<%= appname%>/issues"
   },
   "licenses": "MIT",
-  "spm": {},
+  "spm": {
+    "buildArgs": "--global react:window.React"
+  },
   "config":{
-    "port":<%= port%>
+    "port": <%= port%>
   },
   "scripts": {
     "less": "rc-tools run less",
