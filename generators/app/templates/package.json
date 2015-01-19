@@ -19,6 +19,9 @@
   },
   "licenses": "MIT",
   "spm": {
+    "devDependencies": {
+      "react": "~0.12.1"
+    },
     "buildArgs": "--global react:window.React"
   },
   "config":{
