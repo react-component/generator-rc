@@ -19,8 +19,8 @@
   },
   "licenses": "MIT",
   "spm": {
-    "devDependencies": {
-      "react": "~0.12.1"
+    "dependencies": {
+      "react": "*"
     },
     "buildArgs": "--global react:window.React"
   },
@@ -28,10 +28,11 @@
     "port": <%= port%>
   },
   "scripts": {
+    "example": "webpack -d && rc-tools run jsx2html",
     "less": "rc-tools run less",
     "history": "rc-tools run history",
     "start": "node --harmony node_modules/.bin/rc-server",
-    "publish": "rc-tools run tag && spm publish && spm doc publish",
+    "publish": "spm publish && rc-tools run tag",
     "lint": "rc-tools run lint",
     "test": "",
     "saucelabs": "rc-tools run saucelabs",
@@ -39,20 +40,24 @@
     "browser-test-cover": "rc-tools run browser-test-cover"
   },
   "devDependencies": {
-    "precommit-hook": "^1.0.7",
-    "rc-server": "^1.5.4",
-    "rc-tools": "^1.1.3",
+    "css-loader": "^0.9.1",
     "expect.js": "~0.3.1",
-    "modulex": "^1.7.4",
-    "react": "~0.12.1"
+    "file-loader": "^0.8.1",
+    "jsx-loader": "^0.12.2",
+    "precommit-hook": "^1.0.7",
+    "rc-server": "^2.0.0",
+    "rc-tools": "^1.1.0",
+    "react": "~0.12.1",
+    "style-loader": "^0.8.3",
+    "url-loader": "^0.5.5",
+    "webpack": "~1.5.3"
   },
   "precommit": [
     "lint",
     "less"
   ],
   "browserify-shim": {
-    "react": "global:React",
-    "jquery": "global:jQuery"
+    "react": "global:React"
   },
   "browserify": {
     "transform": [
