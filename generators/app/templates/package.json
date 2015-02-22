@@ -55,22 +55,5 @@
   "precommit": [
     "lint",
     "less"
-  ],
-  "browserify-shim": {
-    "react": "global:React"
-  },
-  "browserify": {
-    "transform": [
-      [
-        "browserify-jsx"
-      ],
-      [
-        "browserify-shim"
-      ]
-    ]
-  },
-  "dependencies": {
-    "browserify-shim": "^3.8.0",
-    "browserify-jsx": "^0.1.0"
-  }
+  ]
 }
