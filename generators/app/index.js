@@ -38,7 +38,7 @@ module.exports = Base.extend({
     var appname = this.appname;
     var filename = appname.charAt(0).toUpperCase() + appname.slice(1);
     this.dest.write('lib/' + filename + '.js', [
-      '/**', '*' + filename, '*/',
+      '/** @jsx React.DOM */',
       'var React = require(\'react\');',
       'var ' + filename + ' = React.createClass();',
       'module.exports = ' + filename + ';'

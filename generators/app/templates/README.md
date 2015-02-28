@@ -38,13 +38,7 @@
 
 ### Keyboard
 
-* Previous month (PageUp)
-* Next month (PageDown)
-* tab into hour input: Last hour(Up), Next hour(Down)
-* tab into hour input: Last minute(Up), Next minute(Down)
-* tab into hour input: Last second(Up), Next second(Down)
-* Last year (Control + left)
-* Next year (Control + right)
+
 
 ## install
 
@@ -80,9 +74,6 @@ React.render(<Rc<%= appname%> />, container);
     </tbody>
 </table>
 
-
-online docs: http://spmjs.io/docs/rc-<%= appname%>/
-
 ## Development
 
 ```
@@ -92,9 +83,9 @@ npm start
 
 ## Example
 
-http://localhost:<%= port%>/examples/index.md
+http://localhost:<%= port%>/examples/
 
-online example: http://spmjs.io/docs/rc-<%= appname%>/examples/
+online example: http://react-component.github.io/<%= appname%>/build/examples/
 
 ## Test Case
 
