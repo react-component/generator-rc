@@ -13,7 +13,7 @@ module.exports = {
 
   module: {
     loaders: [
-      {test: /\.js$/, loader: 'jsx-loader'},
+      {test: /\.js$/, loader: 'jsx-loader?harmony'},
       {test: /\.css/, loader: 'style!css'},
       {test: /\.woff(\?v=\d+\.\d+\.\d+)?$/, loader: "url?limit=10000&minetype=application/font-woff"},
       {test: /\.woff2(\?v=\d+\.\d+\.\d+)?$/, loader: "url?limit=10000&minetype=application/font-woff"},
