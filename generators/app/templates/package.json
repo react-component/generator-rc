@@ -21,8 +21,7 @@
   "spm": {
     "dependencies": {
       "react": "*"
-    },
-    "buildArgs": "--global react:window.React"
+    }
   },
   "config":{
     "port": <%= port%>
