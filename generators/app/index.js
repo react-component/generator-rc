@@ -14,7 +14,7 @@ module.exports = Base.extend({
     Base.apply(this, arguments);
     this.option('port', {type: Number, defaults: '8000'});
     this.option('version', {type: String, defaults: '1.0.0'});
-    this.option('version', {type: String, defaults: ''});
+    this.option('author', {type: String, defaults: ''});
   },
 
   welcome: function () {
