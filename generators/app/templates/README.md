@@ -32,6 +32,20 @@
 <img src="http://gtms02.alicdn.com/tps/i2/TB1luFKHXXXXXb3XXXXl4OqLpXX-574-596.png" width="288"/>
 
 
+## Development
+
+```
+npm install
+npm start
+```
+
+## Example
+
+http://localhost:<%= port%>/examples/
+
+online example: http://react-component.github.io/<%= appname%>/build/examples/
+
+
 ## Feature
 
 * support ie8,ie8+,chrome,firefox,safari
@@ -50,6 +64,7 @@
 var Rc<%= appname%> = require('rc-<%= appname%>');
 var React = require('react');
 React.render(<Rc<%= appname%> />, container);
+```
 
 ## API
 
@@ -74,18 +89,6 @@ React.render(<Rc<%= appname%> />, container);
     </tbody>
 </table>
 
-## Development
-
-```
-npm install
-npm start
-```
-
-## Example
-
-http://localhost:<%= port%>/examples/
-
-online example: http://react-component.github.io/<%= appname%>/build/examples/
 
 ## Test Case
 
