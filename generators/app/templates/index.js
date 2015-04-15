@@ -1,1 +1,1 @@
-module.exports = require('./lib/<%=Appname%>');
+module.exports = require('./lib/<%=AppName%>');

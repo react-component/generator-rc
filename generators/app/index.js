@@ -2,6 +2,13 @@ var yeoman = require('yeoman-generator');
 var Base = yeoman.generators.Base;
 var Path = require('path');
 var fs = require('fs');
+
+function camelCase(name){
+  return name.replace(/-\w/g,function(m){
+    return m.charAt(1).toUpperCase();
+  })
+}
+
 module.exports = Base.extend({
   constructor: function () {
     Base.apply(this, arguments);
@@ -12,7 +19,7 @@ module.exports = Base.extend({
 
   welcome: function () {
     this.appname = this.appname.replace(/\s/g, '-');
-    this.Appname = this.appname.charAt(0).toUpperCase() + this.appname.slice(1);
+    this.AppName = this.appname.charAt(0).toUpperCase() + camelCase(this.appname.slice(1));
     this.log('welcome to generator-rc: ' + this.appname);
     this.port = this.options.port;
     this.version = this.options.rc_version;
@@ -35,13 +42,12 @@ module.exports = Base.extend({
         fs.renameSync(path, oldPath);
       }
     });
-    var appname = this.appname;
-    var filename = appname.charAt(0).toUpperCase() + appname.slice(1);
-    this.dest.write('lib/' + filename + '.js', [
+    var AppName = this.AppName;
+    this.dest.write('lib/' + AppName + '.js', [
       '/** @jsx React.DOM */',
       'var React = require(\'react\');',
-      'var ' + filename + ' = React.createClass();',
-      'module.exports = ' + filename + ';'
+      'var ' + AppName + ' = React.createClass();',
+      'module.exports = ' + AppName + ';'
     ].join('\n'));
   },
 
