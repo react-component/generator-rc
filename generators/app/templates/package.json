@@ -35,9 +35,9 @@
     "publish": "spm publish && rc-tools run tag",
     "lint": "rc-tools run lint",
     "test": "",
-    "saucelabs": "rc-tools run saucelabs",
-    "browser-test": "rc-tools run browser-test",
-    "browser-test-cover": "rc-tools run browser-test-cover"
+    "saucelabs": "node --harmony node_modules/.bin/rc-tools run saucelabs",
+    "browser-test": "node --harmony node_modules/.bin/rc-tools run browser-test",
+    "browser-test-cover": "node --harmony node_modules/.bin/rc-tools run browser-test-cover"
   },
   "devDependencies": {
     "expect.js": "0.3.x",
@@ -50,5 +50,11 @@
   "precommit": [
     "lint",
     "less"
-  ]
+  ],
+  "browserify": {
+    "transform": [
+      ["reactify", {"es6": true}],
+      "envify"
+    ]
+  }
 }
