@@ -18,23 +18,18 @@
     "url": "http://github.com/react-component/<%= appname%>/issues"
   },
   "licenses": "MIT",
-  "spm": {
-    "dependencies": {
-      "react": "*"
-    }
-  },
+  "main":"./lib/index",
   "config":{
     "port": <%= port%>
   },
   "scripts": {
     "build": "rc-tools run build",
+    "precommit": "rc-tools run precommit",
     "less": "rc-tools run less",
     "gh-pages": "rc-tools run gh-pages",
-    "history": "rc-tools run history",
-    "start": "node-dev --harmony node_modules/.bin/rc-server",
-    "publish": "spm publish && rc-tools run tag",
+    "start": "node --harmony node_modules/.bin/rc-server",
+    "publish": "rc-tools run tag",
     "lint": "rc-tools run lint",
-    "test": "",
     "saucelabs": "node --harmony node_modules/.bin/rc-tools run saucelabs",
     "browser-test": "node --harmony node_modules/.bin/rc-tools run browser-test",
     "browser-test-cover": "node --harmony node_modules/.bin/rc-tools run browser-test-cover"
@@ -42,19 +37,12 @@
   "devDependencies": {
     "expect.js": "0.3.x",
     "precommit-hook": "1.x",
-    "rc-server": "2.x",
-    "rc-tools": "2.x",
+    "rc-server": "3.x",
+    "rc-tools": "3.x",
     "react": "0.13.x",
     "node-dev":"2.x"
   },
   "precommit": [
-    "lint",
-    "less"
-  ],
-  "browserify": {
-    "transform": [
-      ["reactify", {"es6": true}],
-      "envify"
-    ]
-  }
+    "precommit"
+  ]
 }
