@@ -44,7 +44,8 @@ module.exports = Base.extend({
     });
     var AppName = this.AppName;
     this.dest.write('src/' + AppName + '.jsx', [
-      '/** @jsx React.DOM */',
+      '\'use strict\';',
+      '',
       'var React = require(\'react\');',
       'class ' + AppName + ' extends React.Component {}',
       'module.exports = ' + AppName + ';'
