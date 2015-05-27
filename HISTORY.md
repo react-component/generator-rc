@@ -3,6 +3,8 @@
 
 ## 2.3.0 / 2015-05-27
 
+- move source file from `lib` to `src`
+- move `index.js` to `src/index.js`, and add a new `index.js` to require `src/index.js`
 - remove all `/** @jsx React.DOM */` from source file
 - upgrade `rc-tools` `rc-server` to 3.x
 - add `scripts` to package.json
