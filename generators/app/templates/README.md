@@ -43,7 +43,7 @@ npm start
 
 http://localhost:<%= port%>/examples/
 
-online example: http://react-component.github.io/<%= appname%>/build/examples/
+online example: http://react-component.github.io/<%= appname%>/examples/
 
 
 ## Feature
