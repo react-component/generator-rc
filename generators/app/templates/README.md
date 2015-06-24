@@ -1,10 +1,9 @@
 # rc-<%= appname%>
 ---
 
-<%= appname%> ui component for react
+React <%= AppName%> Component
 
 [![NPM version][npm-image]][npm-url]
-[![SPM version](http://spmjs.io/badge/rc-<%= appname%>)](http://spmjs.io/package/rc-<%= appname%>)
 [![build status][travis-image]][travis-url]
 [![Test coverage][coveralls-image]][coveralls-url]
 [![gemnasium deps][gemnasium-image]][gemnasium-url]
@@ -29,7 +28,7 @@
 
 ## Screenshots
 
-<img src="http://gtms02.alicdn.com/tps/i2/TB1luFKHXXXXXb3XXXXl4OqLpXX-574-596.png" width="288"/>
+<img src="" width="288"/>
 
 
 ## Development
@@ -61,9 +60,9 @@ online example: http://react-component.github.io/<%= appname%>/examples/
 ## Usage
 
 ```js
-var Rc<%= appname%> = require('rc-<%= appname%>');
+var <%= Appname%> = require('rc-<%= appname%>');
 var React = require('react');
-React.render(<Rc<%= appname%> />, container);
+React.render(<<%= Appname%> />, container);
 ```
 
 ## API
