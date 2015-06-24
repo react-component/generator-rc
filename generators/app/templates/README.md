@@ -60,9 +60,9 @@ online example: http://react-component.github.io/<%= appname%>/examples/
 ## Usage
 
 ```js
-var <%= Appname%> = require('rc-<%= appname%>');
+var <%= AppName%> = require('rc-<%= appname%>');
 var React = require('react');
-React.render(<<%= Appname%> />, container);
+React.render(<<%= AppName%> />, container);
 ```
 
 ## API
