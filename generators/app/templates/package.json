@@ -1,5 +1,5 @@
 {
-  "name": "rc-<%= appname%>",
+  "name": "<%= packageName%>",
   "version": "<%= version%>",
   "description": "<%= appname%> ui component for react",
   "keywords": [
@@ -18,6 +18,7 @@
     "url": "http://github.com/react-component/<%= appname%>/issues"
   },
   "licenses": "MIT",
+  <%= publishConfig%>
   "main":"./lib/index",
   "config":{
     "port": <%= port%>

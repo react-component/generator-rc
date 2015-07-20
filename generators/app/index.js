@@ -15,6 +15,8 @@ module.exports = Base.extend({
     this.option('port', {type: Number, defaults: '8000'});
     this.option('rc_version', {type: String, defaults: '1.0.0'});
     this.option('author', {type: String, defaults: ''});
+    this.option('pkg_name', {type: String, defaults: ''});
+    this.option('tnpm', {type: Boolean, defaults: false});
   },
 
   welcome: function () {
@@ -22,8 +24,15 @@ module.exports = Base.extend({
     this.AppName = this.appname.charAt(0).toUpperCase() + camelCase(this.appname.slice(1));
     this.log('welcome to generator-rc: ' + this.appname);
     this.port = this.options.port;
-    this.version = this.options.rc_version;
+    this.version = this.options.rcVersion;
     this.author = this.options.author;
+    this.packageName = this.options.pkgName || ('rc-'+this.appname);
+    this.publishConfig='';
+    if(this.options.tnpm){
+      this.publishConfig=['"publishConfig": {',
+        '"registry": "http://registry.npm.alibaba-inc.com"',
+      '},'].join('\n');
+    }
   },
 
   setup: function () {
