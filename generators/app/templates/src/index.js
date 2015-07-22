@@ -1,2 +1,5 @@
+'use strict';
+
 // export this package's api
-module.exports = require('./<%= AppName%>');
+import <%= AppName%> from './<%= AppName%>';
+export default <%= AppName%>;

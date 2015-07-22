@@ -1,2 +1,5 @@
-// do not modify this file
-module.exports = require('./src/');
+'use strict';
+
+// export this package's api
+import <%= AppName%> from './src/';
+export default <%= AppName%>;

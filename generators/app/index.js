@@ -56,9 +56,9 @@ module.exports = Base.extend({
     this.dest.write('src/' + AppName + '.jsx', [
       '\'use strict\';',
       '',
-      'var React = require(\'react\');',
+      'import React from \'react\';',
       'class ' + AppName + ' extends React.Component {}',
-      'module.exports = ' + AppName + ';'
+      'export default ' + AppName + ';'
     ].join('\n'));
   },
 
