@@ -17,6 +17,7 @@
   "bugs": {
     "url": "http://github.com/react-component/<%= appname%>/issues"
   },
+  "files":["lib", "assets/*.css"],
   "licenses": "MIT",
   <%= publishConfig%>
   "main":"./lib/index",
