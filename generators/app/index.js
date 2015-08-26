@@ -17,6 +17,7 @@ module.exports = Base.extend({
     this.option('author', {type: String, defaults: ''});
     this.option('pkg_name', {type: String, defaults: ''});
     this.option('tnpm', {type: Boolean, defaults: false});
+    this.option('repo_url', {type: String, defaults: ''});
   },
 
   welcome: function () {
@@ -24,15 +25,11 @@ module.exports = Base.extend({
     this.AppName = this.appname.charAt(0).toUpperCase() + camelCase(this.appname.slice(1));
     this.log('welcome to generator-rc: ' + this.appname);
     this.port = this.options.port;
+    this.repo_url = this.options.repoUrl||('https://github.com/react-component/'+this.appname);
     this.version = this.options.rcVersion;
     this.author = this.options.author;
     this.packageName = this.options.pkgName || ('rc-'+this.appname);
-    this.publishConfig='';
-    if(this.options.tnpm){
-      this.publishConfig=['"publishConfig": {',
-        '"registry": "http://registry.npm.alibaba-inc.com"',
-      '},'].join('\n');
-    }
+    this.tnpm = this.options.tnpm;
   },
 
   setup: function () {
@@ -54,8 +51,6 @@ module.exports = Base.extend({
     });
     var AppName = this.AppName;
     this.dest.write('src/' + AppName + '.jsx', [
-      '\'use strict\';',
-      '',
       'import React from \'react\';',
       'class ' + AppName + ' extends React.Component {}',
       'export default ' + AppName + ';'

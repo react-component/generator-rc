@@ -8,18 +8,22 @@
     "react-<%= appname%>",
     "<%= appname%>"
   ],
-  "homepage": "http://github.com/react-component/<%= appname%>",
+  "homepage": "<%= repo_url%>",
   "author": "<%= author%>",
   "repository": {
     "type": "git",
-    "url": "git@github.com:react-component/<%= appname%>.git"
+    "url": "<%= repo_url%>.git"
   },
   "bugs": {
-    "url": "http://github.com/react-component/<%= appname%>/issues"
+    "url": "<%= repo_url%>/issues"
   },
   "files":["lib", "assets/*.css"],
   "licenses": "MIT",
-  <%= publishConfig%>
+  <% if(tnpm) {%>
+  "publishConfig":{
+    "registry": "http://registry.npm.alibaba-inc.com"
+  },
+  <%}%>
   "main":"./lib/index",
   "config":{
     "port": <%= port%>
