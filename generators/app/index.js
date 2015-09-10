@@ -13,11 +13,11 @@ module.exports = Base.extend({
   constructor: function () {
     Base.apply(this, arguments);
     this.option('port', {type: Number, defaults: '8000'});
-    this.option('rc_version', {type: String, defaults: '1.0.0'});
+    this.option('rcVersion', {type: String, defaults: '1.0.0'});
     this.option('author', {type: String, defaults: ''});
-    this.option('pkg_name', {type: String, defaults: ''});
+    this.option('pkgName', {type: String, defaults: ''});
     this.option('tnpm', {type: Boolean, defaults: false});
-    this.option('repo_url', {type: String, defaults: ''});
+    this.option('repoUrl', {type: String, defaults: ''});
   },
 
   welcome: function () {
