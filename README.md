@@ -1,6 +1,6 @@
 # generator-rc
 
-yeoman generator for react component
+yeoman generator for react component for node 4.0.0
 
 For details to see https://github.com/react-component/rc-server and https://github.com/react-component/rc-tools
 
