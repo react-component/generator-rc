@@ -52,7 +52,7 @@ module.exports = Base.extend({
     var AppName = this.AppName;
     this.dest.write('src/' + AppName + '.jsx', [
       'import React from \'react\';',
-      'class ' + AppName + ' extends React.Component {}',
+      'const ' + AppName + ' = React.createClass({});',
       'export default ' + AppName + ';'
     ].join('\n'));
   },
