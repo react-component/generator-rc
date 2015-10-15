@@ -3,4 +3,6 @@
 import '<%= packageName%>/assets/index.less';
 import <%= AppName%> from '<%= packageName%>';
 import React from 'react';
-React.render(<<%= AppName%> />, document.getElementById('__react-content'));
+import ReactDOM from 'react-dom';
+
+ReactDOM.render(<<%= AppName%> />, document.getElementById('__react-content'));
