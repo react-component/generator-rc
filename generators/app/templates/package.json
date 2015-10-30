@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "expect.js": "0.3.x",
-    "precommit-hook-eslint": "3.x",
+    "pre-commit": "1.x",
     "rc-server": "3.x",
     "rc-tools": "4.x",
     "react": "0.14.x",
