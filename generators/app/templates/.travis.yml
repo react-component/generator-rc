@@ -4,7 +4,7 @@ sudo: false
 
 notifications:
   email:
-  - yiminghe@gmail.com
+  - <%= author%>
 
 node_js:
 - 4.0.0
@@ -16,7 +16,6 @@ before_install:
       echo "Only docs were updated, stopping build process."
       exit
     fi
-    npm install mocha-phantomjs -g
     phantomjs --version
 script:
 - |
