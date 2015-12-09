@@ -51,7 +51,7 @@ npm start
 http://localhost:<%= port%>/examples/
 
 <%if(!tnpm) {%>
-online example: http://react-component.github.io/<%= appname%>/examples/
+online example: http://react-component.github.io/<%= appname%>/
 <%}%>
 
 ## Feature
