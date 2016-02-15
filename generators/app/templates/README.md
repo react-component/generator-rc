@@ -111,7 +111,7 @@ npm run chrome-test
 ## Coverage
 
 ```
-npm coverage
+npm run coverage
 ```
 
 open coverage/ dir
