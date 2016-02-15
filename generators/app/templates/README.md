@@ -58,8 +58,6 @@ online example: http://react-component.github.io/<%= appname%>/
 
 * support ie8,ie8+,chrome,firefox,safari
 
-### Keyboard
-
 
 ## install
 
@@ -105,11 +103,18 @@ React.render(<<%= AppName%> />, container);
 
 ## Test Case
 
-http://localhost:<%= port%>/tests/runner.html?coverage
+```
+npm test
+npm run chrome-test
+```
 
 ## Coverage
 
-http://localhost:<%= port%>/node_modules/rc-server/node_modules/node-jscover/lib/front-end/jscoverage.html?w=http://localhost:<%= port%>/tests/runner.html?coverage
+```
+npm coverage
+```
+
+open coverage/ dir
 
 ## License
 
