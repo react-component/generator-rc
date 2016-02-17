@@ -2,14 +2,13 @@
 
 yeoman generator for react component for node 4.0.0
 
-For details to see https://github.com/react-component/rc-server and https://github.com/react-component/rc-tools
+see also https://github.com/react-component/rc-tools
 
 ## Feature
 
-* support precommit-hook
-* support jshint/jscs
-* support gh-changelog
-* support mocha-phantomjs
+* support pre-commit
+* support eslint
+* support karma
 * support coveralls.io
 * support travis-ci
 * support saucelabs
@@ -38,3 +37,77 @@ repo_url defaults to http://github.com/react-component,
 
 pkg_name defaults to parent directory's name,
 ``
+
+### file structure
+
+```
+- .travis.yml
+- examples
+ - index.html
+ - index.js
+- src
+ - Component.js
+ - index.js
+- index.js
+- tests
+  - index.js
+  - detail.spec.js
+- package.json
+```
+
+#### examples/index.js
+
+```js
+import ReactDOM from 'react-dom';
+import React from 'react';
+import Component from 'rc-test';
+ReactDOM.render(<Component />, document.getElementById('__react-content'));
+```
+
+#### src/Component.js
+
+```js
+import React from 'react';
+const Component = React.createClass({
+    // TODO
+    render: function(){
+        return <div></div>;
+    };
+});
+export default Component;
+```
+
+#### .travis.yml
+
+#### package.json
+
+#### detail.spec.js
+
+```js
+import expect from 'expect.js';
+import React from 'react';
+import Component from 'rc-test';
+
+describe('it', function(){
+    it('works', function(){
+        const component = (<Component/><a></a></Component>);
+        expect(component).to.be(component);
+    });
+});
+```
+
+#### index.html
+
+```
+placeholder
+```
+
+### start server
+
+```
+npm install
+npm start
+```
+
+* run `npm run chrome-test` to see test
+* open [http://localhost:8000/examples/](http://localhost:8000/examples/) to see demo
