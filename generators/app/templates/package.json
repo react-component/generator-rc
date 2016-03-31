@@ -18,7 +18,7 @@
     "url": "<%= repo_url%>/issues"
   },
   "files":["lib", "assets/*.css"],
-  "licenses": "MIT",
+  "license": "MIT",
   <% if(tnpm) {%>
   "publishConfig":{
     "registry": "http://registry.npm.alibaba-inc.com"
