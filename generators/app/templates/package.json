@@ -8,15 +8,20 @@
     "react-<%= appname%>",
     "<%= appname%>"
   ],
+  "engines": {
+    "node": ">=4.0.0"
+  },
   "homepage": "<%= repo_url%>",
   "author": "<%= author%>",
+  <%if(original_repo_url) {%>
   "repository": {
     "type": "git",
     "url": "<%= repo_url%>.git"
   },
-  "bugs": {
-    "url": "<%= repo_url%>/issues"
-  },
+  <%} else {%>
+  "repository": "react-component/<%= appname%>",
+  <%}%>
+  "bugs": "<%= repo_url%>/issues",
   "files":["lib", "assets/*.css"],
   "license": "MIT",
   <% if(tnpm) {%>

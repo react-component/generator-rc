@@ -1,6 +1,6 @@
 {
   "name": "generator-rc",
-  "version": "3.0.5",
+  "version": "3.0.6",
   "author":"yiminghe@gmail.com",
   "description": "yeoman generator for react component",
   "keywords": [
@@ -12,14 +12,11 @@
     "yeoman-generator": "^0.17.3"
   },
   "engines": {
-    "node": ">=0.11"
+    "node": ">=4.0.0"
   },
   "scripts":{
     "publish":"git push origin"
   },
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "http://github.com/react-component/generator-rc.git"
-  }
+  "repository": "react-component/generator-rc.git"
 }

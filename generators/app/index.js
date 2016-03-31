@@ -25,6 +25,7 @@ module.exports = Base.extend({
     this.AppName = this.appname.charAt(0).toUpperCase() + camelCase(this.appname.slice(1));
     this.log('welcome to generator-rc: ' + this.appname);
     this.port = this.options.port;
+    this.original_repo_url = this.options.repoUrl;
     this.repo_url = this.options.repoUrl||('https://github.com/react-component/'+this.appname);
     this.version = this.options.rcVersion;
     this.author = this.options.author;
