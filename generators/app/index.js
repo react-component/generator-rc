@@ -51,10 +51,9 @@ module.exports = Base.extend({
       }
     });
     var AppName = this.AppName;
-    this.dest.write('src/' + AppName + '.jsx', [
-      'import React from \'react\';',
-      'const ' + AppName + ' = React.createClass({});',
-      'export default ' + AppName + ';'
+    this.dest.write('src/' + AppName + '.tsx', [
+      'import * as React from \'react\';',
+      'export default class ' + AppName + ' extends React.Component<any, any> {}',
     ].join('\n'));
   },
 

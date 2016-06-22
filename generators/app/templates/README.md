@@ -32,7 +32,9 @@ React <%= AppName%> Component
 ## Development
 
 ```
+npm install typings -g
 npm install
+typings install
 npm start
 ```
 

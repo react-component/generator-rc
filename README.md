@@ -6,6 +6,7 @@ see also https://github.com/react-component/rc-tools
 
 ## Feature
 
+* support typescript
 * support pre-commit
 * support eslint
 * support karma
@@ -44,48 +45,47 @@ pkg_name defaults to parent directory's name,
 - .travis.yml
 - examples
  - index.html
- - index.js
+ - index.tsx
 - src
- - Component.js
- - index.js
+ - Component.tsx
+ - index.tsx
 - index.js
 - tests
   - index.js
-  - detail.spec.js
+  - detail.spec.tsx
 - package.json
 ```
 
-#### examples/index.js
+#### examples/index.tsx
 
 ```js
-import ReactDOM from 'react-dom';
-import React from 'react';
+import * as ReactDOM from 'react-dom';
+import * as React from 'react';
 import Component from 'rc-test';
 ReactDOM.render(<Component />, document.getElementById('__react-content'));
 ```
 
-#### src/Component.js
+#### src/Component.tsx
 
 ```js
-import React from 'react';
-const Component = React.createClass({
+import * as React from 'react';
+export default class Component extends React.Component<any, any> {
     // TODO
-    render: function(){
+    render(){
         return <div></div>;
-    };
-});
-export default Component;
+    }
+}
 ```
 
 #### .travis.yml
 
 #### package.json
 
-#### detail.spec.js
+#### detail.spec.tsx
 
 ```js
 import expect from 'expect.js';
-import React from 'react';
+import * as React from 'react';
 import Component from 'rc-test';
 
 describe('it', function(){
