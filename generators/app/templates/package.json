@@ -34,6 +34,7 @@
     "port": <%= port%>
   },
   "scripts": {
+    "watch-tsc": "rc-tools run watch-tsc",
     "build": "rc-tools run build",
     "gh-pages": "rc-tools run gh-pages",
     "start": "rc-tools run server",
