@@ -24,5 +24,9 @@ build
 lib
 coverage
 *.js
-typings/
+*.jsx
+*.map
 !tests/index.js
+!/index*.js
+/ios/
+/android/
