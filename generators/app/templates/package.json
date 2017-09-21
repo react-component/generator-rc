@@ -47,7 +47,7 @@
     "coverage": "rc-tools run coverage"
   },
   "dependencies": {
-    "babel-runtime": "6.x",
+    "babel-runtime": "6.x"
   },
   "devDependencies": {
     "expect.js": "0.3.x",
