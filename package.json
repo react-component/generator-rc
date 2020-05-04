@@ -9,7 +9,7 @@
     "react"
   ],
   "dependencies": {
-    "yeoman-generator": "^0.17.3"
+    "yeoman-generator": "^4.10.0"
   },
   "engines": {
     "node": ">=4.0.0"
